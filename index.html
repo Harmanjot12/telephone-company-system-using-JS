@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Phone Bills</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="brand-logo"></div>
+            <div class="brand-title">Telephone</div>
+            <div class="inputs">
+              <label>Account Number</label>
+              <input type="text" id="account" placeholder="xxx xxx xxxx" />
+              <br>
+              <label>Select Service Type</label>
+              
+              <input type="button" onclick="regular()" id="service" value="Regular"/>
+              <input type="button" onclick="premium()" id="service" value="Premium"/>
+
+              </div>
+
+            </div>
+            
+        <br><br>
+        
+        <div id="reg">
+            <form id="regularForm">
+                <input type="text" id="timeregular" placeholder="Minutes you used service...">
+            </form>
+        </div>
+  
+        <div id="pre">
+                <input type="text" id="timeday" placeholder="Minutes used in Day...">
+                <input type="text" id="timenight" placeholder="Minutes used in Night...">
+            
+        </div>
+
+
+        <input type="button" value="Check Price" onclick="Telephone()">
+
+        <input type="text" id="cost">
+                
+        
+
+          </div>
+    </body>
+</html>
