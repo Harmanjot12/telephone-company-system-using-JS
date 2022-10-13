@@ -11,12 +11,12 @@
             <div class="brand-title">Telephone</div>
             <div class="inputs">
               <label>Account Number</label>
-              <input type="text" id="account" placeholder="xxx xxx xxxx" />
+              <input type="text" id="account" placeholder="xxx xxx xxxx"/>
               <br>
               <label>Select Service Type</label>
               
-              <input type="button" onclick="regular()" id="service" value="Regular"/>
-              <input type="button" onclick="premium()" id="service" value="Premium"/>
+              <input type="button" onclick="regdisplay()"  value="Regular"/>
+              <input type="button" onclick="predisplay()" value="Premium"/>
 
               </div>
 
@@ -25,22 +25,25 @@
         <br><br>
         
         <div id="reg">
-            <form id="regularForm">
+            
                 <input type="text" id="timeregular" placeholder="Minutes you used service...">
-            </form>
+                <input type="button" value="Check Price" onclick="regular()">
+
+                <input type="text" id="costreg">
+          
         </div>
   
         <div id="pre">
                 <input type="text" id="timeday" placeholder="Minutes used in Day...">
                 <input type="text" id="timenight" placeholder="Minutes used in Night...">
-            
+                <input type="button" value="Check Price" onclick="premium()">
+
+                <input type="text" id="costpre">
+                        
         </div>
 
 
-        <input type="button" value="Check Price" onclick="Telephone()">
-
-        <input type="text" id="cost">
-                
+       
         
 
           </div>
