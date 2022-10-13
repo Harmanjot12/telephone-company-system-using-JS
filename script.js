@@ -41,8 +41,7 @@ function premium(){
     else{
         costday = (timeday - 75)*0.10
     }
-    costtotal = costday+costnight
-    document.getElementById("costpre").value = "$" + costtotal;
+  
   
 
     if(timenight<=100){
@@ -52,4 +51,7 @@ function premium(){
     else{
         costnight = (timenight - 100)*0.5
     }
+    
+      costtotal = costday+costnight
+    document.getElementById("costpre").value = "$" + costtotal;
 }
